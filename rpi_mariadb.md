@@ -79,7 +79,7 @@ sudo mount -a
 ```
 7. Clone /var/lib/mysql to /mnt/database/
 ```
-rsync -a /var/lib/mysql /mnt/database/
+sudo rsync -a /var/lib/mysql /mnt/database/
 ```
 8. Edit (using vim, nvim, nano, etc.) as root (sudo) /etc/msql/mariadb.conf.d/50-server.cnf and edit the following line
 ```
@@ -87,6 +87,6 @@ data.dir        = /mnt/database/mysql
 ```
 9. Restart MariaDB
 ```
-sudo systemctly restart mysql
+sudo systemctl restart mysql
 ```
 These steps were modified from this [thread](https://mariadb.com/kb/en/i-know-this-has-been-asked-loads-before-but/)
