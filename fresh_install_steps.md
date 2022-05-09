@@ -2,37 +2,37 @@
 ```
 yay -S cmake gcc-fortran
 
-yay -S neovim \ 
-       kitty \ 
-       libreoffice-fresh \
-       r \
-       python3 \
-       python-pip \
-       obsidian \ 
-       lazygit \ 
-       cider \ 
-       zoom \
-       hunspell \
-       hunspell-en_us \
-       evolution \
-       evolution-ews \
-       nodejs \
-       ttf-fira-sans \
-       brave-bin \
-       zsh \
-       rclone \
-       chrome-gnome-shell \
-       mariadb \
-       rstudio-desktop-bin \
-       yarn \
-       refind-efi \
-       rpi-imager \
-       steam \
-       vlc \
-       realvnc-vnc-viewer \
-       ranger \
-       gamemode \
-       nautlius-admin \
+yay -S neovim  
+       kitty  
+       libreoffice-fresh 
+       r 
+       python3 
+       python-pip 
+       obsidian  
+       lazygit  
+       cider  
+       zoom 
+       hunspell 
+       hunspell-en_us 
+       evolution 
+       evolution-ews 
+       nodejs 
+       ttf-fira-sans 
+       brave-bin 
+       zsh 
+       rclone 
+       chrome-gnome-shell 
+       mariadb 
+       rstudio-desktop-bin 
+       yarn 
+       refind-efi 
+       rpi-imager 
+       steam 
+       vlc 
+       realvnc-vnc-viewer 
+       ranger 
+       gamemode 
+       nautlius-admin 
        bluberry
 ```
 
