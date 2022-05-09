@@ -1,6 +1,6 @@
 ## Application installation script (using yay)
 ```
-yay -S cmake gg-fortran
+yay -S cmake gcc-fortran
 
 yay -S neovim 
        kitty 
