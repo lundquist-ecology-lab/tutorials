@@ -12,8 +12,7 @@ yay -S neovim
        lazygit  
        cider  
        zoom 
-       hunspell 
-       hunspell-en_us 
+       hunspell  
        evolution 
        evolution-ews 
        nodejs 
@@ -33,7 +32,9 @@ yay -S neovim
        ranger 
        gamemode 
        nautlius-admin 
-       bluberry
+       blueberry
+
+yay -S hunspell-en_us
 ```
 
 ## Theming 
