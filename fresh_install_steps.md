@@ -20,7 +20,7 @@ yay -S neovim
        brave-bin 
        zsh 
        rclone 
-       chrome-gnome-shell 
+       chrome-gnome-shell-git 
        mariadb 
        rstudio-desktop-bin 
        yarn 
@@ -52,17 +52,18 @@ Themes
 1. Graphite GTK
 
 ```
-cd \tmp
+cd /tmp
 git clone https://github.com/vinceliuice/Graphite-gtk-theme
 cd Graph*
-.\install.sh --tweaks rimless normal darker
+./install.sh --tweaks rimless normal darker
 ```
+Make sure to switch to dark theme in Gnome
 2. Tela icon theme
 ```
-cd \tmp
+cd /tmp
 git clone https://github.com/vinceliuice/Tela-icon-theme
 cd Tela*
-.\install.sh -a
+./install.sh -a
 ```
 This installs all color variations, pick both theme and icons using `Tweak Tools`
 
@@ -109,4 +110,4 @@ install.packages(x)
 Fix for rstudio-bin:
 
 `sudo nvim /usr/share/applications/rstudio.desktop` and append
-`Exec=/usr/bin/rstudio-bin %f` to `Exec=/usr/bin/rstudio-bin %f --no-sandbox`
+`Exec=/usr/bin/rstudio-bin %F` to `Exec=/usr/bin/rstudio-bin %f --no-sandbox`
