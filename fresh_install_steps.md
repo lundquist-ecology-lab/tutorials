@@ -56,7 +56,7 @@ git clone https://github.com/vinceliuice/Graphite-gtk-theme
 cd Graph*
 .\install.sh --tweaks rimless normal darker
 ```
-2. Tela icons
+2. Tela icon theme
 ```
 cd \tmp
 git clone https://github.com/vinceliuice/Tela-icon-theme
