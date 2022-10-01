@@ -56,37 +56,37 @@ The above will work to start using MariaDB SQL server; however, my microSD card 
 **Here is how I set up a 1 TB USB drive as my data directory**
 
 1. Insert the USB drive and check the block name of the drive partition you want your database to be on
-```
+```shell
 lsblk
 ```
 2. Mine was sda1 (yours might be different)
 3. Unmount the drive and format it to ext4
-```
+```shell
 sudo umount /dev/sdXX # Change sdXX to whatever your drive is
 sudo mkfs.ext4 /dev/sdXX -L database
 ```
 4. Create a mount point for your drive
-```
+```shell
 sudo mkdir /mnt/database
 ```
 5. Edit your /etc/fstab (using vim, nvim, nano, etc.) as root (sudo) and insert the following
-```
+```shell
 /dev/sda1   /mnt/database   ext4  defaults  0   0
 ```
 6. Mount your drive to /mnt/database
-```
+```shell
 sudo mount -a
 ```
 7. Clone /var/lib/mysql to /mnt/database/
-```
+```shell
 sudo rsync -a /var/lib/mysql /mnt/database/
 ```
 8. Edit (using vim, nvim, nano, etc.) as root (sudo) /etc/msql/mariadb.conf.d/50-server.cnf and edit the following line
-```
+```shell
 data.dir        = /mnt/database/mysql
 ```
 9. Restart MariaDB
-```
+```shell
 sudo systemctl restart mysql
 ```
 These steps were modified from this [thread](https://mariadb.com/kb/en/i-know-this-has-been-asked-loads-before-but/)

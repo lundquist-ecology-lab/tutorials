@@ -8,7 +8,7 @@ your OS's repositories.
 
 OS: EndeavourOS 
 
-```
+```shell
 yay -S cmake gcc-fortran
 
 ## Some of these are Gnome specific
@@ -55,7 +55,7 @@ Gnome tweaks `modify window buttons`
 Themes
 1. Graphite GTK
 
-```
+```shell
 cd /tmp
 git clone https://github.com/vinceliuice/Graphite-gtk-theme
 cd Graph*
@@ -63,7 +63,7 @@ cd Graph*
 ```
 Make sure to switch to dark theme in Gnome
 2. Tela icon theme
-```
+```shell
 cd /tmp
 git clone https://github.com/vinceliuice/Tela-icon-theme
 cd Tela*
@@ -75,7 +75,7 @@ This installs all color variations, pick both theme and icons using `Tweak Tools
 
 Install [oh-my-zsh](https://ohmyz.sh/)
 
-```
+```shell
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ```
@@ -121,7 +121,7 @@ Mounting cloud drives using rclone
 
 [Download system service here](https://gist.github.com/kabili207/2cd2d637e5c7617411a666d8d7e97101)
 
-```
+```shell
 mkdir ~/mnt
 mkdir ~/mnt/drive
 mkdir ~/mnt/box
@@ -139,5 +139,7 @@ systemctl --user start rclone@box
 ```
 
 # Set up bluetooth
+```shell
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
+```
