@@ -1,0 +1,7 @@
+Description=Play Crab Rave
+
+[Service]
+ExecStart=sh /home/USER/Music/rave.sh
+
+[Install]
+WantedBy=multi-user.target
