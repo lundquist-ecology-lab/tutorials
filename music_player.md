@@ -12,7 +12,6 @@ On Debian
 
 ```
 sudo apt install sox
-
 ```
 ## Step 3: Write a short script to play a portion of the song that you want to play
 
@@ -20,7 +19,6 @@ sudo apt install sox
 #!/bin/sh
 
 play /home/USERNAME/Music/crab_rave.mp3 trim 01:10 fade 3 15 3 norm
-
 ```
 The above code using SoX to play crab_rave.mp3 for 15 seconds from 01:10 and will
 also fade in for 3 seconds, and fade out for 3 seconds.
@@ -61,7 +59,6 @@ This timer will play the song every 6 hours from system startup
 sudo systemctl enable rave.timer
 
 sudo systemctl start rave.timer
-
 ```
 
 You can check on the timer by using `sudo systemctl list-timers` command
