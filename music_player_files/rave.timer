@@ -2,7 +2,7 @@
 Description=Plays crab rave every 6 hours
 
 [Timer]
-OnCalendar=0/6:00:00
+OnUnitActiveSec=6h
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=timers.target
