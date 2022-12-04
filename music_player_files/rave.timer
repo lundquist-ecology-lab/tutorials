@@ -2,7 +2,9 @@
 Description=Plays crab rave every 6 hours
 
 [Timer]
-OnUnitActiveSec=6h
+Persistent=true
+OnBootSec=1
+OnUnitActiveSec=12h
 
 [Install]
 WantedBy=timers.target
