@@ -1,10 +1,9 @@
 [Unit]
-Description=Plays crab rave every 6 hours
+Description=Plays crab rave at 1000 and 2200
 
 [Timer]
-Persistent=true
-OnBootSec=1
-OnUnitActiveSec=12h
+OnCalendar=*-*-* 10:00:00
+OnCalendar=*-*-* 22:00:00
 
 [Install]
 WantedBy=timers.target
